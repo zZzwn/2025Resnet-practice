@@ -7,7 +7,7 @@ An attempt by a sophomore automotive student at Tongji University on Resnet trai
 目标：掌握ResNet结构、torchvision.models使用、迁移学习，并完成一个小型分类任务。项目包括可运行脚本、最佳模型权重和训练可视化。
 
 ## 方法
-- **数据准备**：使用`torchvision.datasets.CIFAR10`，图像resize到224x224（匹配ResNet输入），应用ImageNet归一化。DataLoader batch_size=64。
+- **数据准备**：使用`torchvision.datasets.CIFAR10`，图像resize到224x224（匹配ResNet输入），应用ImageNet归一化。DataLoader batch_size=64。数据来源：cifar-10
 - **网络修改**：加载预训练ResNet-18 (`models.resnet18(weights='IMAGENET1K_V1')`)，替换fc层为10类输出。
 - **迁移学习**：全部微调（Adam优化器，lr=0.001），损失函数CrossEntropyLoss。训练5 epochs（GPU上~20min）。
 - **训练与评估**：每个epoch计算train/test loss和accuracy，保存测试acc最高模型（best.pth）。
