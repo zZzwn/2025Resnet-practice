@@ -37,6 +37,5 @@ An attempt by a sophomore automotive student at Tongji University on Resnet trai
 - `training_curves.png`: 初始曲线图
 - `new_training_curves.png`: 继续曲线图
 - `data/`: CIFAR-10数据集（GitHub上忽略上传）
-
-作者：[你的GitHub用户名]  
+作者：zZzwn
 日期：2025-12-18
